@@ -12,7 +12,7 @@ import AOS from 'aos'
 import "aos/dist/aos.css"
 import './pcorner.css'
 import image6 from './ip.jpg'
-
+import './pevent.css'
 
 
 function Home()
