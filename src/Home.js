@@ -135,18 +135,19 @@ useEffect(()=>{
       </div>
 
     <h1 className="visit" data-aos="zoom-in">Events</h1>
-    <div className="evntcard">
+  
+  <div className="evntcard">
         <div className="event1">
-         <div class="flip-card">
-         <div class="flip-card-inner">
-         <div class="flip-card-front">
+         <div class="flcard">
+         <div class="flinner">
+         <div class="flfront">
          <img src={image2} alt="Avatar" height="200px" width="240px"/>
          </div>
-         <div class="flip-card-back">
+         <div class="flback">
          <h1>Event Name</h1>
          <p>	<i class='far fa-calendar-alt'></i> 11/01/2022  </p>
          <p>    <i class='far fa-clock'></i> 9:00 AM  </p>
-         <Link to='/event' style={{textDecoration: 'none'}}><button  className="wevnt">Know More</button></Link>
+         <Link to={process.env.PUBLIC_URL+'/event'} style={{textDecoration: 'none'}}><button  className="wevnt">Know More</button></Link>
        </div>
        </div>
       </div>
@@ -154,16 +155,16 @@ useEffect(()=>{
         </div>
         <div className="event2">
 
-        <div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
+        <div class="flcard">
+  <div class="flinner">
+    <div class="flfront">
       <img src={image8} alt="Avatar" height="200px" width="240px"/>
     </div>
-    <div class="flip-card-back">
+    <div class="flback">
       <h1>Event Name</h1>
       <p>	<i class='far fa-calendar-alt'></i> 11/01/2022  </p>
       <p><i class='far fa-clock'></i> 9:00 AM  </p>
-      <Link to='/event' style={{textDecoration: 'none'}}><button  className="wevnt">Know More</button></Link>
+      <Link to={process.env.PUBLIC_URL+'/event'} style={{textDecoration: 'none'}}><button  className="wevnt">Know More</button></Link>
     </div>
   </div>
 </div>
@@ -171,22 +172,23 @@ useEffect(()=>{
         </div>
         <div className="event3">
 
-        <div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
+        <div class="flcard">
+  <div class="flinner">
+    <div class="flfront">
       <img src={image7} alt="Avatar" height="200px" width="240px" />
     </div>
-    <div class="flip-card-back">
+    <div class="flback">
       <h1>Event Name</h1>
       <p>	<i class='far fa-calendar-alt'></i> 11/01/2022  </p>
       <p> <i class='far fa-clock'></i> 9:00 AM  </p>
-      <Link to='/event' style={{textDecoration: 'none'}}><button  className="wevnt">Know More</button></Link>
+      <Link to={process.env.PUBLIC_URL+'/event'} style={{textDecoration: 'none'}}><button  className="wevnt">Know More</button></Link>
     </div>
   </div>
 </div>
         </div>
-        <div className="event4"> <Link to='/event' style={{textDecoration: 'none'}}><button  className="wevnt">More Events</button></Link></div>
-    </div>
+        <div className="event4"> <Link to={process.env.PUBLIC_URL+'/event'} style={{textDecoration: 'none'}}><button  className="wevnt">More Events</button></Link></div>
+    </div>    
+      
 <div className="pmessage">
 <div class="p-message">
         <p class="p3" data-aos="flip-up">Valuable Words of PRINCIPAL</p>
